@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+
+    background-image: linear-gradient(135deg, #FAB2FF,#1904E5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all{
+    height: 95vh;
+    width: 80vw;
+    background-color: aliceblue;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.all_pictures{
+    height: 100%;
+    width: 70%;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    
+    color: white;
+
+    overflow: hidden;
+    background-image: url(https://i.pinimg.com/736x/5d/73/ea/5d73eaabb25e3805de1f8cdea7df4a42--tumblr-backgrounds-iphone-phone-wallpapers-iphone-wallaper-tumblr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.all_pictures_fillter{
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    background-color: #5961f9ad;
+}
+
+
+
+.login_content{
+    height: 60%;
+    width: 100%;
+    /* background-color: #FAB2FF; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login_heading{
+    font-size: 10vw;
+}
+p{
+    font-size: 1.1vw;
+}
+.Socials{
+    /* background-color: #1904E5; */
+    height: 20%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.Social_buttons{
+    height: 60%;
+    width: 100%;
+    /* background-color: #FAB2FF; */
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+.facebook{
+    height: 80%;
+    width: 6vw;
+    background-color: #3b5998;
+    border-radius: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0px  8px black;
+
+}
+.twitter{
+    
+        height: 80%;
+        width: fit-content;
+        background-color: rgb(0, 183, 255);
+        border-radius: 40px;
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        box-shadow: 0 0px  8px black;
+}
+.all_formContent{
+    height: 100%;
+    width: 40%;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    padding: 3%;
+}
+.login_tag{
+    font-size: 6vw;
+}
+.create{
+    color: blue;
+    text-decoration: underline;
+}
+.wrapper_head{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 25%;
+    margin-bottom: 5%;
+
+    /* background-color: #1904E5; */
+}
+.login_tag_message{
+    color: rgb(129, 129, 129);
+    
+    
+
+    /* background-color: #1904E5; */
+}
+
+.inputs{
+    height: 15%;
+    width: 100%;
+    /* background-color: #1904E5; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+input{
+    outline: none;
+    border: none;
+
+    padding: 5%;
+    /* background-color: #1904E5; */
+
+    border-bottom: 1px solid;
+    height: 40%;
+    width: 100%;
+    font-size: 1vw;
+    margin-bottom: 10%;
+}
+
+.remember{
+    height: 10%;
+
+    
+    /* background-color: #1904E5; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login_button_class{
+    height: 10%;
+}
+.forget{
+    color: gray;
+}
+.login_button_class{
+    /* background-color: #1904E5; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.login_button{
+    height: 80%;
+    width: 10vw;
+    background-image: linear-gradient(145deg,greenyellow,green);
+    border-radius: 40px;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0px  8px greenyellow;
+    transition: all 0.3s ease;
+}
+
+.login_button:hover{
+ /* background-color: greenyellow; */
+ transform: scale(1.1);
+}
+
+@media screen and (max-width: 992px) {
+    .all{
+        flex-direction: column;
+    }
+    .all_pictures{
+        height: 50%;
+        width: 100%;
+
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+    }
+    .Socials{
+        align-items: center;
+    }
+    .Social_buttons{
+        justify-content: center;
+        margin-top: 10%;
+    }
+    .all_formContent{
+        height: 50%;
+        width: 100%;
+
+        border-bottom-left-radius: 20px;
+    }
+    .wrapper_head{
+        height: 20%;
+        width: 100%;
+        /* background-color: #1904E5; */
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+    .inputs{
+        height: 20%;
+        /* background-color: #1ae504; */
+    
+    }
+    input{
+        font-size: 20px;
+        padding: 2%;
+        margin-bottom: 2%;
+        /* height: 0; */
+        /* width: 0; */
+        /* background-color: #FAB2FF; */
+    }
+    .remember{
+        margin-top: 5%;
+        /* background-color: #1904E5; */
+    }
+    .login_button_class{
+        justify-content: center;
+    
+    }
+    .login_button{
+        width: 50%
+    }
+    
+}
